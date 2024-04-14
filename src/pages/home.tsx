@@ -1,31 +1,86 @@
+import React from 'react';
 import {
-    //Initial Components
-    IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+  IonList,
+  IonItem,
+  IonAvatar,
+  IonTextarea,
+  IonButton,
+  IonIcon,
+  IonFooter,
+  IonText,
 } from '@ionic/react';
+import { camera, videocam, albums, notifications, chatbox, person } from 'ionicons/icons';
+import './Home.css';
 
-// CSS
-//import './profile.css';
-  
-  const Home: React.FC = () => {
-    return (
-      <IonPage>
-        <IonHeader>
+const Home: React.FC = () => {
+  return (
+    <IonPage>
+      <IonHeader>
+        <IonToolbar>
+          <IonTitle>Home</IonTitle>
+          <IonButton color="light" className="circular-button" slot="end">
+            <IonIcon icon={chatbox} />
+          </IonButton>
+          <IonButton color="light" className="circular-button" slot="end">
+            <IonIcon icon={notifications} />
+          </IonButton>
+          <IonButton color="light" className="circular-button" slot="end">
+            <IonIcon icon={person} />
+            {/* <img src="../src/assets/img/ARSY_CIRCLE_GREEN_PNG.png" id="profile" alt="profile" /> */}
+          </IonButton>
+        </IonToolbar>
+      </IonHeader>
+      <IonContent fullscreen>
+        {/* Post Section */}
+        <IonList>
+          {/* Post Status */}
+          <IonItem>
+            <IonAvatar slot="start">
+              <img src="../src/assets/img/profpic.png" alt="profile" />
+            </IonAvatar>
+            <IonTextarea auto-grow placeholder="What's on your mind?" />
+          </IonItem>
+          {/* End Post Status */}
+
+          {/* Add more posts here */}
+
+        </IonList>
+
+        {/* Photos, Videos, and Reels Section */}
+        <IonFooter>
           <IonToolbar>
-            <IonTitle>Home</IonTitle>
+            <IonButton color="light" slot="start">
+              <IonIcon icon={camera} />
+              <IonText>Photos</IonText>
+            </IonButton>
+            <IonButton color="light" slot="start">
+              <IonIcon icon={videocam} />
+              <IonText>Videos</IonText>
+            </IonButton>
+            <IonButton color="light" slot="start">
+              <IonIcon icon={albums} />
+              <IonText>Reels</IonText>
+            </IonButton>
           </IonToolbar>
-        </IonHeader>
-        <IonContent fullscreen>
-          <IonHeader collapse="condense">
-            <IonToolbar>
-              <IonTitle size="large">Home</IonTitle>
-            </IonToolbar>
-          </IonHeader>
-          <h1>Hello World<br></br>This is my Homepage.</h1>
-        </IonContent>
-      </IonPage>
-    );
-  };
-  
-  //
-  export default Home;
-  
+
+          <IonToolbar color="success">
+            <img src="../src/assets/img/home.gif" alt="profile" />
+            <IonText style={{ textAlign: 'center' }}>
+              All rights reserved @2024
+            </IonText>
+
+          </IonToolbar>
+
+        </IonFooter>
+
+      </IonContent>
+    </IonPage>
+  );
+};
+
+export default Home;
