@@ -11,10 +11,10 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { calculatorOutline, ellipse, homeOutline, personOutline, speedometerOutline, square, triangle } from 'ionicons/icons';
-import Home from './pages/home';
-import Tab1 from './pages/profile';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/calculator';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+import Clickcounter from './pages/Clickcounter';
+import Calculator from './pages/Calculator';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -54,17 +54,17 @@ const App: React.FC = () => (
           </Route>
 
           <Route exact path="/profile">
-            <Tab1 />
+            <Profile />
           </Route>
           <Route exact path="/clickcounter">
-            <Tab2 />
+            <Clickcounter />
           </Route>
           <Route path="/calculator">
-            <Tab3 />
+            <Calculator />
           </Route>
-          <Route exact path="/">
+          {/* <Route exact path="/">
             <Redirect to="/tab1" />
-          </Route>
+          </Route> */}
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
 
@@ -73,15 +73,15 @@ const App: React.FC = () => (
             <IonLabel>Home</IonLabel>
           </IonTabButton>
 
-          <IonTabButton tab="tab1" href="/profile">
+          <IonTabButton tab="profile" href="/profile">
             <IonIcon aria-hidden="true" icon={personOutline} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/clickcounter">
+          <IonTabButton tab="clickcounter" href="/clickcounter">
             <IonIcon aria-hidden="true" icon={speedometerOutline} />
             <IonLabel>Click Counter</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/calculator">
+          <IonTabButton tab="calculator" href="/calculator">
             <IonIcon aria-hidden="true" icon={calculatorOutline} />
             <IonLabel>Calculator</IonLabel>
           </IonTabButton>
