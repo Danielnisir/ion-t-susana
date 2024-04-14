@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonButton } from '@ionic/react';
-import './Tab3.css';
+import './Calculator.css';
 
 const Tab3: React.FC = () => {
   const [expression, setExpression] = useState('');
