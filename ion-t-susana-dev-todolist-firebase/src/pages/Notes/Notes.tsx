@@ -32,7 +32,7 @@ import './Notes.css';
 
 // Firebase
 import { collection, addDoc, onSnapshot,updateDoc,doc, deleteDoc} from 'firebase/firestore';
-import { db } from './firebase';
+import { db } from '../Todolist/firebase';
 
 const Todolist: React.FC = () => {
   const [notes, readNotes] = useState<{ id: string; title: string; description: string;dateAdded: string; }[]>([]);
