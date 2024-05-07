@@ -1,23 +1,23 @@
-import { Redirect, Route } from 'react-router-dom';
 import {
-  IonApp,
-  IonIcon,
-  IonLabel,
-  IonRouterOutlet,
-  IonTabBar,
-  IonTabButton,
-  IonTabs,
-  setupIonicReact
+    IonApp,
+    IonIcon,
+    IonLabel,
+    IonRouterOutlet,
+    IonTabBar,
+    IonTabButton,
+    IonTabs,
+    setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { home, calculatorOutline, ellipse, fingerPrintOutline, personCircleOutline, square, triangle } from 'ionicons/icons';
-import Home from './pages/Home';
-import Profile from './pages/Profile';
-import ClickCounter from './pages/ClickCounter';
+import { home, personCircleOutline } from 'ionicons/icons';
+import { Redirect, Route } from 'react-router-dom';
 import Calculator from './pages/Calculator';
-import Todolist from './pages/Todolist/Todolist';
-import QuotesGenerator from './pages/QuotesGenerator';
+import ClickCounter from './pages/ClickCounter';
+import Home from './pages/Home';
 import Notes from './pages/Notes/Notes';
+import Profile from './pages/Profile';
+import QuotesGenerator from './pages/QuotesGenerator/QuotesGenerator';
+import Todolist from './pages/Todolist/Todolist';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -28,12 +28,12 @@ import '@ionic/react/css/structure.css';
 import '@ionic/react/css/typography.css';
 
 /* Optional CSS utils that can be commented out */
-import '@ionic/react/css/padding.css';
+import '@ionic/react/css/display.css';
+import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/float-elements.css';
+import '@ionic/react/css/padding.css';
 import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
-import '@ionic/react/css/flex-utils.css';
-import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
