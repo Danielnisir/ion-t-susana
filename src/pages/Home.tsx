@@ -10,6 +10,8 @@ import {
   IonCardContent,
   IonCardHeader,
   IonCardTitle,
+  IonButtons,
+  IonBackButton,
 } from '@ionic/react';
 import { pulseOutline, calculatorOutline, list, todayOutline } from 'ionicons/icons';
 import { useHistory } from 'react-router-dom';
@@ -20,6 +22,7 @@ const Home: React.FC = () => {
   
   const goToclickCounter = () => {
     history.push('/click_counter');
+    link: '/ion-t-susana/Home/ClickCounter'
   };
 
   const goTocalculator = () => {
@@ -60,6 +63,9 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
+          <IonButtons slot='start'>
+            <IonBackButton defaultHref='/app/Home'/>
+          </IonButtons>
           <IonTitle>Home</IonTitle>
         </IonToolbar>
         <hr />

@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/ion-t-susana/"
+  base: "/ion-t-susana/",
   test: {
     globals: true,
     environment: 'jsdom',
