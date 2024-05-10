@@ -21,13 +21,12 @@ const Click_counter: React.FC = () => {
       </IonHeader>
       
       <IonButtons slot="start">
-        <IonBackButton defaultHref="/" />
+        <IonBackButton defaultHref="/ion-t-susana/home" />
       </IonButtons>
       <IonContent fullscreen className="ion-padding" style={{ backgroundColor: '#f0f0f0' }}>
         <IonGrid>
           <IonRow className="ion-align-items-center">
             <IonCol size="12" className="ion-text-center">
-              <img src="src/assets/img/profile.PNG" alt="Button" style={{ width: '150px', height: '150px' }} />
             </IonCol>
           </IonRow>
           <IonRow className="ion-align-items-center">

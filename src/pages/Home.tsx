@@ -21,24 +21,23 @@ const Home: React.FC = () => {
   const history = useHistory();
   
   const goToclickCounter = () => {
-    history.push('/click_counter');
-    link: '/ion-t-susana/Home/ClickCounter'
+    history.push('/ion-t-susana/click_counter');
   };
 
   const goTocalculator = () => {
-    history.push('/calculator');
+    history.push('/ion-t-susana/calculator');
   };
 
   const goToTodolist = () => {
-    history.push('/todolist');
+    history.push('/ion-t-susana/todolist');
   };
 
   const goToQoutesGenerator = () => {
-    history.push('/qoutes_generator');
+    history.push('/ion-t-susana/qoutes_generator');
   };
   
   const goToNotes = () => {
-    history.push('/Notes');
+    history.push('/ion-t-susana/notes');
   };
   const cards = [
     { id: 1, title: 'Click Counter', imageUrl: 'speedometerOutline', onClick: goToclickCounter },

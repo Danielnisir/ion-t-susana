@@ -17,7 +17,7 @@ const Profile: React.FC = () => {
           </IonToolbar>
         </IonHeader>
           <IonCard>
-        <img alt="Silhouette of mountains" src="../src/assets/img/nami.jpg" />
+        <img alt="Silhouette of mountains" src="https://raw.githubusercontent.com/Danielnisir/ion-t-susana/dev-quotesgenerator-firebase/ion-t-susana-dev-todolist-firebase/src/assets/img/nami.jpg" />
         <IonCardHeader>
           <IonCardTitle>Nami</IonCardTitle>
           <IonCardSubtitle>Cat Burglar</IonCardSubtitle>
