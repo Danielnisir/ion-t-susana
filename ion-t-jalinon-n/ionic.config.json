@@ -1,7 +1,0 @@
-{
-  "name": "ion-t-jalinon",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react-vite"
-}
